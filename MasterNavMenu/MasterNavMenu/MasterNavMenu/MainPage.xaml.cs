@@ -45,8 +45,8 @@ namespace MasterNavMenu
             this.BindingContext = new
             {
                 Header = "",
-                image = "http://resorts.hiltonbusinessonline.com/wp-content/uploads/2016/12/lazy-river-447x558-335x209.jpg",
-                Footer = "Welcome to hotel place"
+                image = "http://static.angryfrog.io/shared_images/paperclip_images/000/404/380/original/banner-2.png?1399877765",
+                Footer = "Welcome to hotel plaza"
             };
 		}
 

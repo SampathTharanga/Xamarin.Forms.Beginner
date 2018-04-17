@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MasterNavMenu.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Veiw3 : ContentPage
+	public partial class View3 : ContentPage
 	{
-		public Veiw3 ()
+		public View3 ()
 		{
 			InitializeComponent ();
 		}
