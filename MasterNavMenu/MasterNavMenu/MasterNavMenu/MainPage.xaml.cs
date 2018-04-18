@@ -11,6 +11,14 @@ namespace MasterNavMenu
 {
 	public partial class MainPage : MasterDetailPage
 	{
+        /*
+                                +++ REFERENCES ++
+            https://xamarinhelp.com/masterdetailpage-navigation-menu-xamarin-forms/
+            https://almirvuk.blogspot.com/2016/10/how-to-make-master-detail-page.html
+        */
+
+
+
         public List<MasterPageItem> menuList { get; set; }
 
 		public MainPage()
@@ -44,8 +52,8 @@ namespace MasterNavMenu
 
             this.BindingContext = new
             {
-                Header = "",
-                image = "http://static.angryfrog.io/shared_images/paperclip_images/000/404/380/original/banner-2.png?1399877765",
+                Header = "Restaurant Foods",
+                //image = "MenuBanner.png",
                 Footer = "Welcome to hotel plaza"
             };
 		}

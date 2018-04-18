@@ -11,9 +11,15 @@
             <StackLayout Orientation="Vertical">
                 <!-- This stack layout you can use for other data that you want to have in your menu drawer -->
                 <StackLayout.Children>
-                    <Label Text="{Binding Header}" />
-                    <Image Source="{Binding Image}" Aspect="Fill" />
-                    <Label Text="{Binding Footer}" />
+                    <Label Text="{Binding Header}"
+                           FontSize="20"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="Center"
+                           TextColor="Purple" />
+                 <!--   <Image Source="{Binding Image}" Aspect="Fill" /> -->
+                    <Image Source="MenuBanner.png" Aspect="AspectFill" />
+                    <Label Text="{Binding Footer}" 
+                           HorizontalOptions="Center" />
                 </StackLayout.Children>
 
                 <ListView x:Name="navigationDrawerList"
