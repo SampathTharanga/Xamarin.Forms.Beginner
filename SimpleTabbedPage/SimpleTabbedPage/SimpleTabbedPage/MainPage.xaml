@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:SimpleTabbedPage"
              x:Class="SimpleTabbedPage.MainPage">
 
-    <ContentPage Title="Page 01">
+    <ContentPage Title="Page 01" Icon="ic_home_black_24dp.png">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Label Text="Tabbed Page 01" />
@@ -13,7 +13,7 @@
     </ContentPage>
 
 
-    <ContentPage Title="Page 02">
+    <ContentPage Title="Page 02" Icon="ic_supervisor_account_black_24dp.png">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Label Text="Tabbed Page 02"/>
@@ -22,7 +22,7 @@
     </ContentPage>
 
 
-    <ContentPage Title="Page 03">
+    <ContentPage Title="Page 03" Icon="ic_card_travel_black_24dp.png">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Label Text="Tabbed Page 03"/>
@@ -31,7 +31,7 @@
     </ContentPage>
 
 
-    <ContentPage Title="Page 04">
+    <ContentPage Title="Page 04" Icon="ic_favorite_black_24dp.png">
         <ContentPage.Content>
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Label Text="Tabbed Page 04"/>
