@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:NavPage"
+             x:Class="NavPage.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout x:Name="mainStack">
+            <StackLayout Padding="20" Margin="0,80,0,0">
+                <Label Text="User Name" TextColor="Black"/>
+                <Entry Placeholder="User Name" />
+                <Label Text="Password" TextColor="Black" />
+                <Entry Placeholder="Password" IsPassword="True"/>
+                <Button Text="Login" BackgroundColor="SeaGreen"  TextColor="White" Clicked="LoginEvent"/>
+                <Label Text="Not a member? Sign up now." TextColor="Black" HorizontalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
