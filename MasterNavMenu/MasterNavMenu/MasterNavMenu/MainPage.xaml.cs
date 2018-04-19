@@ -1,4 +1,4 @@
-﻿using MasterNavMenu.MenuItems;
+using MasterNavMenu.MenuItems;
 using MasterNavMenu.Views;
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,7 @@ namespace MasterNavMenu
                                 +++ REFERENCES ++
             https://xamarinhelp.com/masterdetailpage-navigation-menu-xamarin-forms/
             https://almirvuk.blogspot.com/2016/10/how-to-make-master-detail-page.html
+		http://xamaringuyhome.blogspot.in/2017/10/step1-at-first-we-will-set-our-mainpage.html
         */
 
 
