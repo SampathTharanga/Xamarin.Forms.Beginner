@@ -12,9 +12,11 @@ namespace NavPage
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomePage : ContentPage
 	{
-		public HomePage ()
+		public HomePage (string userName)
 		{
 			InitializeComponent ();
-		}
+            appUserName.Text = "Hi " + userName + ". Welcome to Home Page!";
+
+        }
 	}
 }

@@ -4,9 +4,10 @@
              x:Class="NavPage.HomePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Home Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="appUserName"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="22" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,7 +8,7 @@
         <StackLayout x:Name="mainStack">
             <StackLayout Padding="20" Margin="0,80,0,0">
                 <Label Text="User Name" TextColor="Black"/>
-                <Entry Placeholder="User Name" />
+                <Entry Placeholder="User Name" x:Name="userNameEntry"/>
                 <Label Text="Password" TextColor="Black" />
                 <Entry Placeholder="Password" IsPassword="True"/>
                 <Button Text="Login" BackgroundColor="SeaGreen"  TextColor="White" Clicked="LoginEvent"/>

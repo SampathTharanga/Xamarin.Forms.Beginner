@@ -16,7 +16,7 @@ namespace NavPage
 
         private void LoginEvent(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new HomePage());
+            Navigation.PushAsync(new HomePage(userNameEntry.Text));
         }
 
     }
