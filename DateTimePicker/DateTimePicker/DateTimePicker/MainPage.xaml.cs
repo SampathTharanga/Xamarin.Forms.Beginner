@@ -18,7 +18,8 @@ namespace DateTimePicker
         {
             var date = dp.Date;
             var time = tp.Time;
-            lblDetails.Text = string.Format("Date : {0} \nTime : {1}", date, time);
+            var pickerData = MyPicker.SelectedItem.ToString();
+            lblDetails.Text = string.Format("Date : {0} \nTime : {1}, \nLocation : {2}", date, time,pickerData);
         }
 
     }

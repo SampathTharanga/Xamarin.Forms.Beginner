@@ -13,6 +13,21 @@
                         MinimumDate="01/01/2018"
                         MaximumDate="12/31/2018"/>
             <TimePicker x:Name="tp" />
+            <Picker x:Name="MyPicker"
+                    Title="Select Location">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>SriLanka</x:String>
+                        <x:String>India</x:String>
+                        <x:String>Australia</x:String>
+                        <x:String>USA</x:String>
+                        <x:String>UK</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                <Picker.SelectedIndex>
+                    1
+                </Picker.SelectedIndex>
+            </Picker>
             <Button Text="Details" 
                     x:Name="btn" 
                     Clicked="Button_Clicked" />
