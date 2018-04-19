@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TextKeyBoardTypes"
+             x:Class="TextKeyBoardTypes.MainPage">
+
+	<ContentPage.Content>
+        <StackLayout BackgroundColor="#2bcbff" Padding="20">
+            <Label Text="Registration Form" FontSize="Medium" HorizontalOptions="Center" />
+            <Entry Placeholder="Username" />
+            <Entry Placeholder="Password" IsPassword="True" />
+            <Entry Placeholder="Age" Keyboard="Numeric" />
+            <Entry Placeholder="Mobile Number" Keyboard="Telephone" />
+            <Entry Placeholder="Email" Keyboard="Email"/>
+            <Editor HeightRequest="150"/>
+            <Button Text="Sign Up" BackgroundColor="White" TextColor="Black"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
