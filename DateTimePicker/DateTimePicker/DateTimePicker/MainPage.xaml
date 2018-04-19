@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DateTimePicker"
+             x:Class="DateTimePicker.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Pickers" 
+                   FontSize="20" 
+                   HorizontalOptions="Center" />
+            <DatePicker x:Name="dp"
+                        MinimumDate="01/01/2018"
+                        MaximumDate="12/31/2018"/>
+            <TimePicker x:Name="tp" />
+            <Button Text="Details" 
+                    x:Name="btn" 
+                    Clicked="Button_Clicked" />
+            <Label x:Name="lblDetails" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
