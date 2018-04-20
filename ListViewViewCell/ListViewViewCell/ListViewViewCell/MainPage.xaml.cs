@@ -23,5 +23,12 @@ namespace ListViewViewCell
             new Data { Name = "Roshan Kumara", Address = "Dikwella, Matara", Id = 3 },
             new Data { Name = "Asela Ranathunga", Address = "Hadapangala, Horana", Id = 4 }
         };
-	}
+
+        private void myList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            var details = e.Item as Data;
+            Navigation.PushAsync(new DetailsPage(details.Id, details.Name, details.Address));
+        }
+
+    }
 }

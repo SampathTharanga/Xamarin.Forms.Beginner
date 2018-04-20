@@ -6,7 +6,7 @@
 
     <StackLayout>
         <Label Text="Contact Details" FontSize="Medium" TextColor="SeaGreen" HorizontalOptions="Center"/>
-        <ListView x:Name="myList">
+        <ListView x:Name="myList" ItemTapped="myList_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

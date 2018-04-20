@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewViewCell.DetailsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ID : " />
+            <Entry Text="" x:Name="IDEntry" TextColor="SeaGreen" />
+            <Label Text="Name : "/>
+            <Entry Text="" x:Name="NameEntry" TextColor="SeaGreen"/>
+            <Label Text="Address" />
+            <Entry Text="" x:Name="AddressEntry" TextColor="SeaGreen"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
