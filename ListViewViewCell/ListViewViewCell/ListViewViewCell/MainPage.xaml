@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ListViewViewCell"
+             x:Class="ListViewViewCell.MainPage">
+
+    <StackLayout>
+        <Label Text="Contact Details" FontSize="Medium" TextColor="SeaGreen" HorizontalOptions="Center"/>
+        <ListView x:Name="myList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Grid BackgroundColor="SeaGreen" Padding="10">
+                                <Label Text="{Binding Id}" />
+                            </Grid>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}" TextColor="SeaGreen" />
+                                <Label Text="{Binding Address}" TextColor="Purple" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
