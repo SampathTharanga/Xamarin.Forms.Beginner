@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BlogWebView"
+             x:Class="BlogWebView.MainPage"
+             Title="Athaebula Blog">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Label Text="Athaebula Blog" FontSize="Medium" TextColor="SeaGreen" HorizontalOptions="Center"/>
+            <WebView Source="http://www.athaebula.com/" VerticalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
