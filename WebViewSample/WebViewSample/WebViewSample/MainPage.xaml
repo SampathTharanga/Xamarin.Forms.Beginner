@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WebViewSample"
+             x:Class="WebViewSample.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="SkyBlue" Padding="5">
+            <Entry Text="" x:Name="EntryUrl" />
+            <Button Text="Load" Clicked="LoadWeb" BackgroundColor="SeaGreen" TextColor="White"/>
+            <StackLayout>
+                <ScrollView>
+                    <WebView x:Name="Browser" VerticalOptions="FillAndExpand" HeightRequest="500"/>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
