@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Indicator"
+             x:Class="Indicator.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="5">
+            <Entry Text="" x:Name="EnryUrl" Placeholder="URL"/>
+            <Button Text="Get Data From URL" BackgroundColor="Gray" TextColor="Black" x:Name="btnClick" Clicked="GetData"/>
+            <StackLayout>
+                <ScrollView>
+                    <StackLayout>
+                        <ActivityIndicator x:Name="progress" IsEnabled="True" IsVisible="False" IsRunning="False" Color="Red"/>
+                        <WebView x:Name="Browser" VerticalOptions="FillAndExpand" HeightRequest="1000"  Navigated="Browser_Navigated" Navigating="Browser_Navigating"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
