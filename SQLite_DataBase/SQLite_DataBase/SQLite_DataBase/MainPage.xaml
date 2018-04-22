@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SQLite_DataBase"
+             x:Class="SQLite_DataBase.MainPage"
+             BackgroundColor="SeaGreen">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EntryName" Placeholder="Name"/>
+            <Entry x:Name="EntryAddress" Placeholder="Address"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnSave" Text="Save" Clicked="btnSave_Clicked"/>
+                <Button x:Name="btnShow" Text="Show" Clicked="btnShow_Clicked"/>
+            </StackLayout>
+            <ListView x:Name="DataList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Address}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
