@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BarcodeAndQR"
+             x:Class="BarcodeAndQR.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Scan" Clicked="Button_Clicked"/>
+            <Label Text="" x:Name="mycode" TextColor="Red" FontSize="Medium" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
