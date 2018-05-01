@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace MultiNavPage
+namespace CapturePhoto
 {
 	public partial class App : Application
 	{
@@ -13,8 +13,7 @@ namespace MultiNavPage
 		{
 			InitializeComponent();
 
-            //Creating the Root page
-			MainPage = new NavigationPage(new MainPage());
+			MainPage = new CapturePhoto.MainPage();
 		}
 
 		protected override void OnStart ()

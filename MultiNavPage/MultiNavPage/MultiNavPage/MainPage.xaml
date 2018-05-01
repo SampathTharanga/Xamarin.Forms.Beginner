@@ -4,8 +4,23 @@
              xmlns:local="clr-namespace:MultiNavPage"
              x:Class="MultiNavPage.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Nav Page1" Clicked="ButtonPage1_Clicked"/>
+                <Button Text="Nav Page2" Clicked="ButtonPage2_Clicked"/>
+                <Button Text="Nav Page3" Clicked="ButtonPage3_Clicked"/>
+                <Button Text="Nav Page4" Clicked="ButtonPage4_Clicked"/>
+                <Button Text="Nav Page5" Clicked="ButtonPage5_Clicked"/>
+                <Button Text="Nav Page6" Clicked="ButtonPage6_Clicked"/>
+                <Button Text="Nav Page7" Clicked="ButtonPage7_Clicked"/>
+                <Button Text="Nav Page8" Clicked="ButtonPage8_Clicked"/>
+                <Button Text="Nav Page9" Clicked="ButtonPage9_Clicked"/>
+                <Button Text="Nav Page10" Clicked="ButtonPage10_Clicked"/>
+                <Button Text="Nav Page11" Clicked="ButtonPage11_Clicked"/>
+                <Button Text="Nav Page12" Clicked="ButtonPage12_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 
 </ContentPage>
