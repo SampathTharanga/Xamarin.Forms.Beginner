@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SwitchExample"
+             x:Class="SwitchExample.MainPage">
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Switch view 1" FontSize="Medium" TextColor="Black"/>
+                <Label Text="{Binding IsToggled, Source={x:Reference switch1}}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                <Switch x:Name="switch1" VerticalOptions="Start"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Switch view 2" FontSize="Medium" TextColor="SeaGreen"/>
+                <Label TextColor="SeaGreen" VerticalOptions="Center" HorizontalOptions="EndAndExpand" x:Name="sv2" />
+                <Switch x:Name="switch2" VerticalOptions="Start" Toggled="switch2_Toggled"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
