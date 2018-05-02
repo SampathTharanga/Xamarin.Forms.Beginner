@@ -15,6 +15,12 @@ namespace SplashScreen.Droid
 {
     [Activity(Label = "SplashScreen", Icon = "@drawable/icon", Theme = "@style/splashTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
+/*
+    REFERENCES: 
+        http://codeworks.it/blog/?p=294
+        https://xamarinhelp.com/creating-splash-screen-xamarin-forms/
+        https://www.c-sharpcorner.com/article/creating-a-splash-screen-in-xamarin-forms/
+*/
     public class SplashScreen : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
