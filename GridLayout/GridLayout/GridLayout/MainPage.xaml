@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridLayout"
+             x:Class="GridLayout.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <!--
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="70"/>
+                -->
+
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <!--
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="60"/>
+                -->
+
+                <ColumnDefinition Width="2*"/>
+                <!--
+                <ColumnDefinition Width="6*"/>
+                -->
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView Color="Red"  Grid.Row="0" Grid.Column="0"/>
+            <BoxView Color="Green"  Grid.Row="0"  Grid.Column="1"/>
+            <BoxView Color="Purple" Grid.Row="1" Grid.Column="0"/>
+            <!--
+            <BoxView Color="Yellow" Grid.Row="1" Grid.Column="1"/>
+            -->
+            <Frame BackgroundColor="Orange" Grid.Row="1" Grid.Column="1">
+                <Label Text="Sampal test" TextColor="Black"/>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
