@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmailValidation.ValidateEmail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EnterEmail" Placeholder="Enter E-mail address"/>
+            <Label x:Name="LabelError" TextColor="Red"/>
+            <Button Text="Lets Validate" Clicked="Button_Clicked" BackgroundColor="SeaGreen" TextColor="Wheat"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
