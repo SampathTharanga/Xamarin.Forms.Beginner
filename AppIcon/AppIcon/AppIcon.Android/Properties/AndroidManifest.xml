@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.AppIcon" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="AppIcon.Android" android:icon="@drawable/Salwar_Suit_Icon"></application>
+</manifest>
