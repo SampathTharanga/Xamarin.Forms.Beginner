@@ -23,10 +23,10 @@ namespace EmailValidation
             var email = EnterEmail.Text;
             var emailPttern = "^([\\w\\.\\-]+)@([\\w\\-]+)((\\.(\\w){2,3})+)$";
 
-            if (!string.IsNullOrWhiteSpace(email) && (Regex.IsMatch(email, emailPttern)))
-                LabelError.Text = "Email verified!";
-            else
+            if (!string.IsNullOrWhiteSpace(email) && !(Regex.IsMatch(email, emailPttern)))
                 LabelError.Text = "Email verification faild!";
+            else
+                LabelError.Text = "";
         }
 
     }
