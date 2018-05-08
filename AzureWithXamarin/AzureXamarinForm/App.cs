@@ -6,7 +6,15 @@ namespace AzureXamarinForm
 {
 	public class App : Application
 	{
-		public App ()
+        /*
+        REFERENCES:
+        https://docs.microsoft.com/en-gb/azure/app-service-mobile/app-service-mobile-xamarin-forms-get-started
+        https://www.c-sharpcorner.com/article/create-a-xamarin-forms-app-using-azure-mobile-services/
+        https://mobileprogrammerblog.wordpress.com/2017/03/04/xamarin-forms-with-microsoft-azure/
+        https://blog.xamarin.com/getting-started-azure-mobile-apps-easy-tables/
+        */
+
+        public App ()
 		{
 			// The root page of your application
 			MainPage = new TodoList();
